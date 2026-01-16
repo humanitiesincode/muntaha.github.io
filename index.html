@@ -3,99 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | GitHub Hosted</title>
+    <title>IITDDH Workshop | Home</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <style>
-        /* CSS: This makes the website look modern */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f0f2f5;
+        body { font-family: 'Georgia', serif; background-color: #fdfdfd; }
+        .navbar { background-color: #002147; } /* Navy Blue */
+        .hero-section {
+            background: #e9ecef;
+            padding: 60px 20px;
+            border-bottom: 5px solid #002147;
+            margin-bottom: 30px;
         }
-
-        /* Navigation Bar */
-        nav {
-            background: #24292e; /* GitHub Dark Gray */
-            color: white;
-            padding: 1rem;
-            text-align: center;
-            position: sticky;
-            top: 0;
-        }
-
-        /* Hero Section */
-        header {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .btn {
-            display: inline-block;
-            background: #2ea44f; /* GitHub Green */
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background 0.3s;
-        }
-
-        .btn:hover { background: #2c974b; }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-            color: #666;
-        }
+        .nav-link { color: white !important; }
+        .card { border: none; border-left: 4px solid #002147; margin-bottom: 20px; }
+        footer { background: #343a40; color: white; padding: 20px; margin-top: 50px; }
     </style>
 </head>
 <body>
 
-    <nav>
-        <h2>My GitHub Website</h2>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">IITDDHWS 2026</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#schedule">Schedule</a>
+                <a class="nav-link" href="#resources">Resources</a>
+            </div>
+        </div>
     </nav>
 
-    <header>
-        <h1>Welcome to My Digital Space</h1>
-        <p>Built with GitHub Pages • 2026</p>
-        <a href="#about" class="btn">Learn More</a>
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4">Digital Humanities Workshop</h1>
+            <p class="lead">Exploring the intersection of Technology and Culture.</p>
+        </div>
     </header>
 
-    <div id="about" class="container">
-        <h3>About This Project</h3>
-        <p>This is a live website hosted directly from a GitHub repository. It uses <strong>HTML5</strong> for structure and <strong>CSS3</strong> for the beautiful layout.</p>
-        <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
-        <h3>Why GitHub Pages?</h3>
-        <ul>
-            <li><strong>Fast:</strong> Powered by GitHub's global servers.</li>
-            <li><strong>Secure:</strong> Includes automatic SSL (HTTPS).</li>
-            <li><strong>Easy:</strong> Just change your code, and the site updates.</li>
-        </ul>
-    </div>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm">
+                    <h5>Quick Info</h5>
+                    <p><strong>Dates:</strong> Jan 20-25, 2026</p>
+                    <p><strong>Location:</strong> IIT Delhi / Virtual</p>
+                    <hr>
+                    <p>This site serves as a central hub for all workshop materials.</p>
+                </div>
+            </div>
 
-    <footer>
-        <p>&copy; 2026 Hosted by GitHub. All rights reserved.</p>
+            <div class="col-md-8">
+                <h3>Welcome</h3>
+                <p>Welcome to the official repository for the <strong>Introduction to Digital Humanities</strong> workshop. This site is hosted for free using GitHub Pages.</p>
+                
+                <h4 id="schedule" class="mt-4">Schedule</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Day 1:</strong> Introduction to Text Analysis</li>
+                    <li class="list-group-item"><strong>Day 2:</strong> Data Visualization for Humanists</li>
+                    <li class="list-group-item"><strong>Day 3:</strong> Mapping and GIS</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2026 Digital Humanities Workshop. Powered by GitHub Pages.</p>
+        </div>
     </footer>
 
 </body>
